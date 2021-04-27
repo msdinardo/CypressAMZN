@@ -1,0 +1,8 @@
+{
+    "baseUrl": "http://automationpractice.com/",
+    "retries": {
+        "openMode": 0
+    },
+    "viewportWidth": 1260,
+    "viewportHeight": 1000
+}
