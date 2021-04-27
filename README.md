@@ -1,2 +1,2 @@
 # CypressEcommerce
-Cypress Test on Amazon
+Cypress Test on automationPractice.com
