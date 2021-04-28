@@ -1,9 +1,11 @@
 import homePage from './pageObject/homePage'
 import listingPage from './pageObject/listingPage'
+import detailPage from './pageObject/detailPage'
 
 describe('Listing Page Test Suite', () => {
     let homePO = new homePage()
     let listingPO = new listingPage()
+    let detailPO = new detailPage()
 
     beforeEach(() => {
         cy.visit('/')
@@ -12,7 +14,7 @@ describe('Listing Page Test Suite', () => {
         listingPO.getCategoryName().contains(categoryWomen)
     })
 
-    it('Search Sub Category', () => {
+    it('Navigate Sub Category', () => {
         let subcategoryTops = 'Tops'
 
         listingPO.getSubCategories().contains('li', subcategoryTops).click()
@@ -20,7 +22,7 @@ describe('Listing Page Test Suite', () => {
         listingPO.getProducts().should('have.length', 2)
     })
 
-    it('Search Third Category', () => {
+    it('Navigate Third Category', () => {
 
         let subcategoryTops = 'Tops'
         let thirdcategoryBlouses = 'Blouses'
@@ -42,7 +44,8 @@ describe('Listing Page Test Suite', () => {
         listingPO.getProducts().should('have.length', 7)
     })
 
-    it.only('Go to detail', () => {
-        listingPO.getProducts().eq(0).find('.product-image-container').click()
+    it('Go to detail', () => {
+        listingPO.getProducts().eq(0).find('.product-image-container').click(10,10)
+        detailPO.getTitle().contains('Faded Short Sleeve T-shirts')
     })
 })
