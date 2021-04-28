@@ -24,9 +24,16 @@ class homePage
     {
         return cy.get('#block_top_menu').contains('a','T-shirts')
     }
-    
 
-  //  cy.get('.cat-name')
+    getNextCarrousel()
+    {
+        return cy.get('.bx-next')
+    }
+
+    getPrevCarrousel()
+    {
+        return cy.get('.bx-prev')
+    }
 }
 
 export default homePage

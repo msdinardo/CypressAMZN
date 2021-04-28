@@ -4,5 +4,6 @@
         "openMode": 0
     },
     "viewportWidth": 1260,
-    "viewportHeight": 1000
+    "viewportHeight": 1000,
+    "testFiles": "**/*.spec.js"
 }

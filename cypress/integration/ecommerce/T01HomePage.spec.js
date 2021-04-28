@@ -39,4 +39,13 @@ describe('Home Page Test Suite',() => {
         listingPO.getProducts().should('have.length',3)
     })
 
+    it('validateCarrousel',() => {
+        homePO.getPrevCarrousel().click()
+        cy.get('#homeslider').should('have.attr','style').and('contain','2337')
+        homePO.getPrevCarrousel().click()
+        cy.get('#homeslider').should('have.attr','style').and('contain','1558')
+        homePO.getPrevCarrousel().click()
+        cy.get('#homeslider').should('have.attr','style').and('contain','779')
+    })
+
 })
