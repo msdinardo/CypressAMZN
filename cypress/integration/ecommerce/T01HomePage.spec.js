@@ -40,12 +40,16 @@ describe('Home Page Test Suite',() => {
     })
 
     it('validateCarrousel',() => {
+        let thirdImagePixel = '2337';
+        let secondImagePixel = '1558';
+        let firstImagePixel = '779';
+        
+        homePO.getPrevCarrousel().click()        
+        homePO.getCarrousel().should('have.attr','style').and('contain',thirdImagePixel)
         homePO.getPrevCarrousel().click()
-        cy.get('#homeslider').should('have.attr','style').and('contain','2337')
+        homePO.getCarrousel().should('have.attr','style').and('contain',secondImagePixel)
         homePO.getPrevCarrousel().click()
-        cy.get('#homeslider').should('have.attr','style').and('contain','1558')
-        homePO.getPrevCarrousel().click()
-        cy.get('#homeslider').should('have.attr','style').and('contain','779')
+        homePO.getCarrousel().should('have.attr','style').and('contain',firstImagePixel)
     })
 
 })
