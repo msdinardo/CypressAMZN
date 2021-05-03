@@ -4,7 +4,10 @@
   "description": "Cypress Test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:ecommerce": "cypress run --spec 'cypress/integration/ecommerce/*'",
+    "cy:headed": "npm run cy:ecommerce -- --headed",
+    "cy:chrome": "npm run cy:ecommerce -- --headless --browser chrome",
+    "cy:edge": "npm run cy:ecommerce -- --headless --browser edge"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,8 @@
   "homepage": "https://github.com/msdinardo/CypressAMZN#readme",
   "dependencies": {
     "cypress": "^7.1.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^2.0.1"
   }
 }

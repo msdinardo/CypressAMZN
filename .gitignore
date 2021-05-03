@@ -105,3 +105,5 @@ dist
 
 # Example directories
 cypress/integration/examples
+cypress/reports
+cypress/videos
