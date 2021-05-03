@@ -50,4 +50,3 @@ npm run cy:chrome
 ```
 npm run cy:edge
 ```
-
