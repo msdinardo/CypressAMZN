@@ -18,4 +18,5 @@ npm install
 npx cypress open
 ```
 4. Search just the **ecommerce** test 
+![image](https://user-images.githubusercontent.com/6429558/116893275-a0e2a300-abe5-11eb-850a-963902c59e8a.png)
 5. Run all the integrations specs
