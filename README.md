@@ -13,10 +13,26 @@ git clone https://github.com/msdinardo/CypressEcommerce.git
 ```
 npm install
 ```
-3. Run npx cypress open to open Cypress
+### Run the Test Interactively
+1. Run npx cypress open to open Cypress
 ```
 npx cypress open
 ```
-4. Search just the **ecommerce** test 
+2. Search just the **ecommerce** test 
 ![image](https://user-images.githubusercontent.com/6429558/116893275-a0e2a300-abe5-11eb-850a-963902c59e8a.png)
-5. Run all the integrations specs
+3. Run all the integrations specs
+
+### Run the Test in Bash Mode
+1. Run npx cypress run to run Cypress in Bash Mode
+```
+npx cypress run
+```
+2. The videos of the executions are going to be stored in the following folder
+```
+./CypressEcommerce/cypress/videos
+```
+3. The report is stored in the following folder (and used report is mochawesome https://github.com/LironEr/cypress-mochawesome-reporter) 
+```
+./CypressEcommerce/cypress/reports/html/index.html
+```
+
