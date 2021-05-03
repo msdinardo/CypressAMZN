@@ -30,6 +30,11 @@ class homePage {
     getPrevCarrousel() {
         return cy.get('.bx-prev')
     }
+
+    getLogin()
+    {
+        return cy.get("a.login")
+    }
 }
 
 export default homePage
