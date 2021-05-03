@@ -31,7 +31,7 @@ npm run cy:ecommerce
 ```
 ./CypressEcommerce/cypress/videos
 ```
-3. The report is stored in the following folder (and used report is mochawesome https://github.com/LironEr/cypress-mochawesome-reporter) 
+3. The report is stored in the following folder (the report is mochawesome https://github.com/LironEr/cypress-mochawesome-reporter) 
 ```
 ./CypressEcommerce/cypress/reports/html/index.html
 ```
