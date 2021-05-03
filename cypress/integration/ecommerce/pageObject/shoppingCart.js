@@ -34,6 +34,11 @@ class shoppingCart
     {
         return cy.get('.alert')
     }
+
+    getCheckOutButton()
+    {
+        return cy.get("a[title='Proceed to checkout']").eq(1)
+    }
 }
 
 export default shoppingCart

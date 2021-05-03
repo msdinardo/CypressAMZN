@@ -2,7 +2,7 @@ import homePage from './pageObject/homePage'
 import listingPage from './pageObject/listingPage'
 import detailPage from './pageObject/detailPage'
 
-describe('Listing Page Test Suite', () => {
+describe('Detail Page Test Suite', () => {
     let homePO = new homePage()
     let listingPO = new listingPage()
     let detailPO = new detailPage()
