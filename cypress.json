@@ -5,5 +5,6 @@
     },
     "viewportWidth": 1260,
     "viewportHeight": 1000,
-    "testFiles": "**/*.spec.js"
+    "testFiles": "**/*.spec.js",
+    "reporter": "cypress-mochawesome-reporter"
 }
