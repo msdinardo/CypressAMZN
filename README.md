@@ -25,7 +25,7 @@ npx cypress open
 ### Run the Test in Bash Mode
 1. Run npx cypress run to run Cypress in Bash Mode
 ```
-npx cypress run
+npm run cy:ecommerce
 ```
 2. The videos of the executions are going to be stored in the following folder
 ```
@@ -34,5 +34,20 @@ npx cypress run
 3. The report is stored in the following folder (and used report is mochawesome https://github.com/LironEr/cypress-mochawesome-reporter) 
 ```
 ./CypressEcommerce/cypress/reports/html/index.html
+```
+### Run the Test in Bash Mode (Headed)
+1. Run npm run cy:headed to run Cypress in Bash Mode
+```
+npm run cy:headed
+```
+### Run the Test in Bash Mode (Chrome/Headless)
+1. Run npm run cy:chrome to run Cypress in Bash Mode
+```
+npm run cy:chrome
+```
+### Run the Test in Bash Mode (Edge/Headless)
+1. Run npm run cy:edge to run Cypress in Bash Mode
+```
+npm run cy:edge
 ```
 
